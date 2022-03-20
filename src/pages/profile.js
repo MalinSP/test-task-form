@@ -222,9 +222,8 @@ const Profile = () => {
                     : { color: "#000000" }
                 }
                 onChange={handleChange}
-                className={`input ${errors.phone && "is-danger"}`}
               />{" "}
-              {errors.phone && <p className='help is-danger'>{errors.phone}</p>}
+              {errors.phone && <p>{errors.phone}</p>}
             </div>
             <div className='form-control'>
               <label htmlFor='comment'>Comment</label>
